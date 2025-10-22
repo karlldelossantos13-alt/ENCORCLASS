@@ -1,5 +1,5 @@
 @@@ CONFIGURE RST AGAIN.
-D1:
+D1: ## 100-199
 CONFIG T
 ip dhcp excluded-add 10.2.1.1 10.2.1.99
 ip dhcp excluded-add 10.2.1.200 10.2.1.254
@@ -8,7 +8,7 @@ ip dhcp pool vlan10
   network 10.2.1.0 255.255.255.0
   default-router 10.2.1.254
 !
-D2:
+D2: ## 200-249
 CONFIG T
 ip dhcp excluded-add 10.2.1.1 10.2.1.199
 ip dhcp excluded-add 10.2.1.250 10.2.1.254
@@ -2196,6 +2196,7 @@ R1#sr os | inc 4.4
 O E2     4.4.0.0 [110/20] via 10.1.1.2, 00:02:29, Ethernet1/0
 O IA     4.4.4.0 [110/31] via 10.1.1.2, 00:00:07, Ethernet1/0
 R1#
+
 
 
 
